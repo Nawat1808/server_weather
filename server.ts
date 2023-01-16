@@ -41,6 +41,7 @@ app.post('/',(request: Request, response: Response)=>{
            response.write(`<h1>the weather in ${jsonData.name}</h1>`)
            response.write(`<h2>${jsonData.weather[0].main}</h2>`)
            response.write(`<h3>${jsonData.weather[0].description}</h3>`)
+           response.write(`<h3>${jsonData.main.temp}</h3>`)
            }
            response.write(`<a href="/">back</a>`)
            response.write(`<body>`)
