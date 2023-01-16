@@ -38,10 +38,10 @@ app.post('/',(request: Request, response: Response)=>{
             response.write(`<h1>search(city): ${query}</h1>`)
             response.write(`<h2>${jsonData.messege}</h2>`)
            }else{
-           response.write(`<h1>the weather in ${jsonData.name}</h1>`)
-           response.write(`<h2>${jsonData.weather[0].main}</h2>`)
-           response.write(`<h3>${jsonData.weather[0].description}</h3>`)
-           response.write(`<h3>${jsonData.main.temp}</h3>`)
+           response.write(`<h1>The weather in : ${jsonData.name}</h1>`)
+           response.write(`<h2>Could : ${jsonData.weather[0].main}</h2>`)
+               response.write(`<h3>Weather : ${jsonData.weather[0].description}</h3>`)
+           response.write(`<h3>Temp : ${jsonData.main.temp}</h3>`)
            }
            response.write(`<a href="/">back</a>`)
            response.write(`<body>`)
